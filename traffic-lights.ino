@@ -1,6 +1,6 @@
 /*
-* Ampel 1: Pins  11-13
-* Ampel 2: Pins   8-10
+* Traffic light 1: Pins  11-13
+* Traffic light 2: Pins   8-10
 */
 
 const int RED1 = 13;
