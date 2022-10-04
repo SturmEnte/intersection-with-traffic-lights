@@ -1,6 +1,6 @@
 /*
-* Traffic light 1: Pins  11-13
-* Traffic light 2: Pins   8-10
+* Traffic light (group) 1: Pins  11-13
+* Traffic light (group) 2: Pins   8-10
 */
 
 const int RED1 = 13;
@@ -21,56 +21,56 @@ void setup() {
   pinMode(RED2, OUTPUT);
   pinMode(YELLOW2, OUTPUT);
   pinMode(GREEN2, OUTPUT);
-  
-  // Ampel 1 Rot
+
+  // Traffic light 1 Rot
   setRed(1, HIGH);
 }
 
 void loop() {
-  // Ampel 2 Rot
+  // Traffic light 2 Rot
   setGreen(2, LOW);
   setYellow(2, LOW);
   setRed(2, HIGH);
 
   delay(SHORT_PHASE);
   
-  // Ampel 1 Rot, Gelb
+  // Traffic light 1 Rot, Gelb
   setYellow(1, HIGH);
 
   delay(SHORT_PHASE);
   
-  // Ampel 1 Grün
+  // Traffic light 1 Grün
   setRed(1, LOW);
   setYellow(1, LOW);
   setGreen(1, HIGH);
 
   delay(LONG_PHASE);
 
-  // Ampel 1 Gelb
+  // Traffic light 1 Gelb
   setGreen(1, LOW);
   setYellow(1, HIGH);
 
   delay(SHORT_PHASE);
 
-  // Ampel 1 Rot
+  // Traffic light 1 Rot
   setYellow(1, LOW);
   setRed(1, HIGH);
 
   delay(SHORT_PHASE);
 
-  // Ampel 2 Rot, Gelb
+  // Traffic light 2 Rot, Gelb
   setYellow(2, HIGH);
 
   delay(SHORT_PHASE);
 
-  // Ampel 2 Grün
+  // Traffic light 2 Grün
   setRed(2, LOW);
   setYellow(2, LOW);
   setGreen(2, HIGH);
 
   delay(LONG_PHASE);
 
-  // Ampel 2 Gelb
+  // Traffic light 2 Gelb
   setGreen(2, LOW);
   setYellow(2, HIGH);
 
