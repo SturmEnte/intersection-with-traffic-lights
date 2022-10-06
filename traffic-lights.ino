@@ -22,55 +22,55 @@ void setup() {
   pinMode(YELLOW2, OUTPUT);
   pinMode(GREEN2, OUTPUT);
 
-  // Traffic light 1 Rot
+  // Traffic light 1 Red
   setRed(1, HIGH);
 }
 
 void loop() {
-  // Traffic light 2 Rot
+  // Traffic light 2 Red
   setGreen(2, LOW);
   setYellow(2, LOW);
   setRed(2, HIGH);
 
   delay(SHORT_PHASE);
   
-  // Traffic light 1 Rot, Gelb
+  // Traffic light 1 Red, Yellow
   setYellow(1, HIGH);
 
   delay(SHORT_PHASE);
   
-  // Traffic light 1 Grün
+  // Traffic light 1 Green
   setRed(1, LOW);
   setYellow(1, LOW);
   setGreen(1, HIGH);
 
   delay(LONG_PHASE);
 
-  // Traffic light 1 Gelb
+  // Traffic light 1 Yellow
   setGreen(1, LOW);
   setYellow(1, HIGH);
 
   delay(SHORT_PHASE);
 
-  // Traffic light 1 Rot
+  // Traffic light 1 Red
   setYellow(1, LOW);
   setRed(1, HIGH);
 
   delay(SHORT_PHASE);
 
-  // Traffic light 2 Rot, Gelb
+  // Traffic light 2 Red, Yellow
   setYellow(2, HIGH);
 
   delay(SHORT_PHASE);
 
-  // Traffic light 2 Grün
+  // Traffic light 2 Green
   setRed(2, LOW);
   setYellow(2, LOW);
   setGreen(2, HIGH);
 
   delay(LONG_PHASE);
 
-  // Traffic light 2 Gelb
+  // Traffic light 2 Yellow
   setGreen(2, LOW);
   setYellow(2, HIGH);
 
